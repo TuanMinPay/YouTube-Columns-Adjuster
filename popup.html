@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Columns Adjuster</title>
+    <script src="tw.js"></script>
+  </head>
+  <body class="bg-gray-100 p-4 w-80">
+    <div class="bg-white p-4 rounded-lg shadow">
+      <div>
+        <label for="columns" class="block text-sm/6 font-medium text-gray-900"
+          >Number of Columns:</label
+        >
+        <div class="mt-2">
+          <input
+            type="number"
+            name="columns"
+            id="columns"
+            min="1"
+            max="10"
+            value="5"
+            class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-600 sm:text-sm/6"
+          />
+        </div>
+      </div>
+
+      <div class="flex gap-3 mt-2">
+        <div class="flex h-6 shrink-0 items-center">
+          <div class="group grid size-4 grid-cols-1">
+            <input
+              id="hideShorts"
+              aria-describedby="hideShorts-description"
+              name="hideShorts"
+              type="checkbox"
+              checked
+              class="col-start-1 row-start-1 appearance-none rounded border border-gray-300 bg-white checked:border-blue-600 checked:bg-blue-600 indeterminate:border-blue-600 indeterminate:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
+            />
+            <svg
+              class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-[:disabled]:stroke-gray-950/25"
+              viewBox="0 0 14 14"
+              fill="none"
+            >
+              <path
+                class="opacity-0 group-has-[:checked]:opacity-100"
+                d="M3 8L6 11L11 3.5"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                class="opacity-0 group-has-[:indeterminate]:opacity-100"
+                d="M3 7H11"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="text-sm/6">
+          <label for="hideShorts" class="font-medium text-gray-900"
+            >Hide YouTube Shorts</label
+          >
+        </div>
+      </div>
+
+      <div class="flex gap-3 mt-2">
+        <div class="flex h-6 shrink-0 items-center">
+          <div class="group grid size-4 grid-cols-1">
+            <input
+              id="hideEndRecommendations"
+              aria-describedby="hideEndRecommendations-description"
+              name="hideEndRecommendations"
+              type="checkbox"
+              checked
+              class="col-start-1 row-start-1 appearance-none rounded border border-gray-300 bg-white checked:border-blue-600 checked:bg-blue-600 indeterminate:border-blue-600 indeterminate:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
+            />
+            <svg
+              class="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-[:disabled]:stroke-gray-950/25"
+              viewBox="0 0 14 14"
+              fill="none"
+            >
+              <path
+                class="opacity-0 group-has-[:checked]:opacity-100"
+                d="M3 8L6 11L11 3.5"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                class="opacity-0 group-has-[:indeterminate]:opacity-100"
+                d="M3 7H11"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="text-sm/6">
+          <label for="hideEndRecommendations" class="font-medium text-gray-900"
+            >Hide End Recommendations</label
+          >
+        </div>
+      </div>
+
+      <button
+        id="save"
+        class="mt-3 cursor-pointer w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600"
+      >
+        Save
+      </button>
+    </div>
+
+
+    <p class="mt-3 text-gray-400">Copyright © 2025 TuanMinPay</p>
+    <script src="popup.js"></script>
+  </body>
+</html>

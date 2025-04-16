@@ -1,0 +1,9 @@
+ytd-rich-grid-renderer,
+ytd-rich-shelf-renderer {
+    --ytd-rich-grid-items-per-row: var(--youtube-columns, 5) !important;
+}
+
+[is-shorts],
+.ytp-ce-element {
+    display: none !important;
+}
